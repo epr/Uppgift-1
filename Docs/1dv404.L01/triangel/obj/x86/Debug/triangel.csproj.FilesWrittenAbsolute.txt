@@ -1,0 +1,5 @@
+/Users/eddy/Desktop/1dv404-uppgift-1/Docs/1dv404.L01/triangel/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/eddy/Desktop/1dv404-uppgift-1/Docs/1dv404.L01/triangel/bin/Debug/triangel.exe.mdb
+/Users/eddy/Desktop/1dv404-uppgift-1/Docs/1dv404.L01/triangel/bin/Debug/triangel.exe
+/Users/eddy/Desktop/1dv404-uppgift-1/Docs/1dv404.L01/triangel/obj/x86/Debug/triangel.exe
+/Users/eddy/Desktop/1dv404-uppgift-1/Docs/1dv404.L01/triangel/obj/x86/Debug/triangel.exe.mdb
