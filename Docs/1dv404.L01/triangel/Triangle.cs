@@ -21,9 +21,11 @@ public class Triangle {
 	} 
 
 	public Triangle(double[] s) {
-		sides = new double[s.Length];
-		for(int i=0;i<s.Length;i++)
-			sides[i]=s[i];
+		if ((s.Length == 3) && (s[0] > 0) && (s[1] > 0) && (s[2] > 0) && ((s[0] + s[1]) > s[2]) && ((s[0] + s[2]) > s[1]) && ((s[1] + s[2]) > s[0])){
+			sides = new double[3];
+			for(int i=0;i<s.Length;i++)
+				sides[i]=s[i];
+		}
 	} 
 
 	public Triangle(Point a, Point b, Point c) {

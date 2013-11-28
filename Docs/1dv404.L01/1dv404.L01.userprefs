@@ -1,15 +1,15 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="triangel/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="triangel/Triangle.cs">
     <Files>
-      <File FileName="triangel/Program.cs" Line="35" Column="1" />
-      <File FileName="triangel/Triangle.cs" Line="62" Column="2" />
+      <File FileName="triangel/Program.cs" Line="94" Column="59" />
+      <File FileName="triangel/Triangle.cs" Line="25" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="triangel" expanded="True">
-            <Node name="Program.cs" selected="True" />
+            <Node name="Triangle.cs" selected="True" />
           </Node>
         </State>
       </Pad>

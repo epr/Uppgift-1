@@ -86,6 +86,12 @@ namespace triangel
 
 			Triangle test20 = new Triangle (new double[]{ -1, -1, -1 });
 			Result ("Tre lika negativa tal", !IsTriangle (test20));
+
+			Triangle test21 = new Triangle (new double[]{ 1, 1, 1, 1 });
+			Result ("Fyra lika positiva tal", !IsTriangle (test21));
+
+			Triangle test22 = new Triangle (new double[]{ 1, 1 });
+			Result ("Två lika positiva tal", !IsTriangle (test22));
 		}
 		public static void Result (string test, bool result) {
 			if (result) {
