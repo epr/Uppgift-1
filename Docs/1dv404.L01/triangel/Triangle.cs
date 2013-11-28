@@ -15,7 +15,9 @@ public class Triangle {
 	double[] sides;
 
 	public Triangle(double a, double b, double c) {
-		sides = new double[] { a, b, c };
+		if ((a > 0) && (b > 0) && (c > 0) && ((a + b) > c) && ((a + c) > b) && ((b + c) > a)) {
+			sides = new double[] { a, b, c };
+		}
 	} 
 
 	public Triangle(double[] s) {
@@ -39,23 +41,28 @@ public class Triangle {
 	}
 
 	private int uniqueSides() {
-		return sides.Distinct<double>().Count();
+		try {
+			return sides.Distinct<double>().Count();
+		}
+		catch {
+			return 0;
+		}
 	}
 
 	public bool isScalene() {
-		if(uniqueSides()==1)
+		if(uniqueSides() == 3)
 			return true;
 		return false;
 	}
 
 	public bool isEquilateral() {
-		if(uniqueSides()==3)
+		if(uniqueSides() == 1)
 			return true;
 		return false;
 	}
 
 	public bool isIsosceles() {
-		if(uniqueSides()==2)
+		if(uniqueSides() == 2)
 			return true;
 		return false;
 	}
