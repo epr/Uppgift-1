@@ -92,6 +92,22 @@ namespace triangel
 
 			Triangle test22 = new Triangle (new double[]{ 1, 1 });
 			Result ("Två lika positiva tal", !IsTriangle (test22));
+
+			Console.WriteLine ();
+			Console.WriteLine ("Tester av konstruktorn med tre Point-parameter");
+			Console.WriteLine ("╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍");
+
+			Console.WriteLine ("Trianglar");
+			Console.WriteLine ("╌╌╌╌╌╌╌╌╌");
+
+			Triangle test23 = new Triangle (new Point (1, 1), new Point (1, 3), new Point (2, 2));
+			Result ("Tre punkter som skapar en likbent triangel", test23.isIsosceles ());
+
+			Triangle test24 = new Triangle (new Point (1, 1), new Point (1, 3), new Point (2, 3));
+			Result ("Tre punkter som skapar en triangel utan lika sidor", test24.isScalene ());
+
+			Triangle test25 = new Triangle (new Point (0, 0), new Point (0, 2), new Point (1.73205080757, 1));
+			Result ("Tre punkter som skapar en liksidig triangel", test25.isEquilateral ());
 		}
 		public static void Result (string test, bool result) {
 			if (result) {
