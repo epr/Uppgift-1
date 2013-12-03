@@ -15,6 +15,9 @@ namespace triangel
 			Triangle test1 = new Triangle (2, 2, 2);
 			Result ("Tre lika positiva tal", test1.isEquilateral ());
 
+			Triangle test100 = new Triangle (10, 2, 2);
+			Result ("Tre lika positiva tal", !test100.isEquilateral ());
+
 			Triangle test2 = new Triangle (2, 2, 3);
 			Result ("Två lika positiva tal och ett tredje tal", test2.isIsosceles ());
 

@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.Workbench ActiveDocument="triangel/Triangle.cs">
     <Files>
-      <File FileName="triangel/Program.cs" Line="94" Column="59" />
-      <File FileName="triangel/Triangle.cs" Line="25" Column="6" />
+      <File FileName="triangel/Program.cs" Line="19" Column="64" />
+      <File FileName="triangel/Triangle.cs" Line="49" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

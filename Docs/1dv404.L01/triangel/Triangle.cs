@@ -30,9 +30,9 @@ public class Triangle {
 
 	public Triangle(Point a, Point b, Point c) {
 		sides = new double[3];
-		sides[0] = Math.Sqrt(Math.Pow((b.x - a.x), 2.0) + Math.Pow((b.y - a.y), 2.0));
-		sides[1] = Math.Sqrt(Math.Pow((b.x - c.x), 2.0) + Math.Pow((b.y - c.y), 2.0));
-		sides[2] = Math.Sqrt(Math.Pow((c.x - a.x), 2.0) + Math.Pow((c.y - a.y), 2.0));
+		sides[0] = Math.Sqrt(Math.Pow((b.x - a.x), 2) + Math.Pow((b.y - a.y), 2));
+		sides[1] = Math.Sqrt(Math.Pow((b.x - c.x), 2) + Math.Pow((b.y - c.y), 2));
+		sides[2] = Math.Sqrt(Math.Pow((c.x - a.x), 2) + Math.Pow((c.y - a.y), 2));
 		Console.WriteLine (sides [0]);
 		Console.WriteLine (sides [1]);
 		Console.WriteLine (sides [2]);
@@ -41,9 +41,9 @@ public class Triangle {
 
 	public Triangle(Point[] s) {
 		sides = new double[s.Length];
-		sides[0] = Math.Sqrt(Math.Pow((s[1].x - s[0].x), 2.0) + Math.Pow((s[1].y - s[0].y), 2.0));
-		sides[1] = Math.Sqrt(Math.Pow((s[1].x - s[2].x), 2.0) + Math.Pow((s[1].x - s[2].x), 2.0));
-		sides[2] = Math.Sqrt(Math.Pow((s[2].x - s[0].x), 2.0) + Math.Pow((s[2].x - s[0].x), 2.0));
+		sides[0] = Math.Sqrt(Math.Pow((s[1].x - s[0].x), 2) + Math.Pow((s[1].y - s[0].y), 2));
+		sides[1] = Math.Sqrt(Math.Pow((s[1].x - s[2].x), 2) + Math.Pow((s[1].y - s[2].y), 2));
+		sides[2] = Math.Sqrt(Math.Pow((s[2].x - s[0].x), 2) + Math.Pow((s[2].y - s[0].y), 2));
 	}
 
 	private int uniqueSides() {
